@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View, Button, SafeAreaView } from 'react-native';
 import { HeaderButton } from './Components/HeaderButton';
+import { data } from '../data/buttons';
 
 export class HomeScreen extends React.Component {
     static navigationOptions = {
@@ -11,8 +12,12 @@ export class HomeScreen extends React.Component {
         return (
             <SafeAreaView style={styles.container}>
                 <View style={{ flexDirection: 'row' }}>
-                    <HeaderButton />
-                    <HeaderButton />
+                    <HeaderButton navigate={navigate} data={data.one} />
+                    <HeaderButton navigate={navigate} data={data.two} />
+                </View>
+                <View style={{ flexDirection: 'row' }}>
+                    <HeaderButton navigate={navigate} data={data.three} />
+                    <HeaderButton navigate={navigate} data={data.four} />
                 </View>
             </SafeAreaView>
         );
