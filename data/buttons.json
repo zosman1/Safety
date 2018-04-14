@@ -1,4 +1,22 @@
-{
-    "one": {},
-    "two": {}
-}
+[
+    {
+        "one": {
+            "name": "Learn",
+            "img": "./somePath"
+        },
+        "two": {
+            "name": "Prevent",
+            "img": "./somePath"
+        }
+    },
+    {
+        "one": {
+            "name": "Act",
+            "img": "./somePath"
+        },
+        "two": {
+            "name": "Donate",
+            "img": "./somePath"
+        }
+    }
+]
