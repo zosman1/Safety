@@ -1,4 +1,4 @@
-export let data = {
+export let detailsData = {
     learn: {
         isAct: false,
         paragraph:
