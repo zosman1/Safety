@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { SafeAreaView, Text, StyleSheet, View, ScrollView } from 'react-native';
-import { H1, H2, H3, H4 } from './Components/Headers';
 
 export class Details extends Component {
     constructor(props) {
@@ -14,30 +13,37 @@ export class Details extends Component {
     render() {
         const { params } = this.props.navigation.state;
         const { navigate } = this.props.navigation;
-        // console.warn(params.data.paragraph);
-        // console.warn(params.data.h1);
+        // console.error(params.data.paragraphs);
+
         return (
             <SafeAreaView>
-                <ScrollView>
-                    <H1 h1={params.data.h1} />
-                    <H2 h2={params.data.h2} />
-                    <H2 h3={params.data.h3} />
-
-                    <View style={styles.paragraph}>
-                        <Text style={styles.paragraphText}>{params.data.paragraph}</Text>
-                    </View>
+                <ScrollView style={styles.container}>
+                    <Paragraph data={params.data.paragraphs[0]} />
+                    <Paragraph data={params.data.paragraphs[1]} />
                 </ScrollView>
             </SafeAreaView>
         );
     }
 }
+function Paragraph(props) {
+    return (
+        <View style={styles.paragraph}>
+            <Text style={styles.header}>{props.data.h1}</Text>
+            <Text style={styles.paragraphText}>{props.data.p}</Text>
+        </View>
+    );
+}
 const styles = StyleSheet.create({
-    paragraph: { paddingLeft: 20, paddingRight: 20 },
-    h1: {
-        fontSize: 50,
+    container: {
+        marginTop: 10,
     },
-    h2: {
-        fontSize: 25,
+    paragraph: {
+        padding: 10,
+        paddingLeft: 20,
+        paddingRight: 20,
+    },
+    header: {
+        fontSize: 30,
     },
     paragraphText: {
         fontSize: 18,

@@ -17,13 +17,13 @@ export class HeaderButton extends Component {
             <TouchableOpacity
                 style={styles.headerButton}
                 onPress={() => this.props.navigate('Details', { data: detailsData[this.props.data.name] })}>
-                <Image style={{ width: 170, height: 170 }} source={images[this.props.data.key]} />
+                <Image style={{ width: 177, height: 177 }} source={images[this.props.data.key]} />
             </TouchableOpacity>
         );
     }
 }
 const styles = StyleSheet.create({
     headerButton: {
-        padding: 10,
+        padding: 1,
     },
 });
