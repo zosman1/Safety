@@ -1,19 +1,18 @@
 export let data = {
     one: {
-        name: 'Learn',
-        img: './somePath',
+        key: 0,
+        name: 'learn',
     },
     two: {
-        name: 'Prevent',
-        img: './somePath',
+        key: 1,
+        name: 'prevent',
     },
-
     three: {
-        name: 'Act',
-        img: './somePath',
+        key: 2,
+        name: 'act',
     },
     four: {
-        name: 'Donate',
-        img: './somePath',
+        key: 3,
+        name: 'donate',
     },
 };
