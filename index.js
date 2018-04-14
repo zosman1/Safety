@@ -1,11 +1,12 @@
-import { AppRegistry } from "react-native";
-import { HomeScreen } from "./src/HomeScreen";
+import { AppRegistry } from 'react-native';
+import { HomeScreen } from './src/HomeScreen';
+import { Details } from './src/Details';
 
-import { StackNavigator } from "react-navigation";
+import { StackNavigator } from 'react-navigation';
 
 const App = StackNavigator({
-  Home: { screen: HomeScreen }
-  // Detials: { screen: Details }
+    Home: { screen: HomeScreen },
+    Details: { screen: Details },
 });
 
-AppRegistry.registerComponent("safety", () => App);
+AppRegistry.registerComponent('safety', () => App);
