@@ -18,7 +18,9 @@ export class Details extends Component {
         return (
             <SafeAreaView>
                 <ScrollView style={styles.container}>
+                    <Border />
                     <Paragraph data={params.data.paragraphs[0]} />
+                    <Border />
                     <Paragraph data={params.data.paragraphs[1]} />
                 </ScrollView>
             </SafeAreaView>
@@ -32,6 +34,9 @@ function Paragraph(props) {
             <Text style={styles.paragraphText}>{props.data.p}</Text>
         </View>
     );
+}
+function Border(props) {
+    return <View style={{ height: 1, backgroundColor: 'lightgray' }} />;
 }
 const styles = StyleSheet.create({
     container: {

@@ -10,8 +10,7 @@ export let detailsData = {
             },
             {
                 h1: 'Where Does Human Trafficking Occur?',
-                p: `Like any crime, human trafficking can occur in any community where there are teens to manipulate and an illegal black market place to service. In 2016 there were over 7,500 cases of human trafficking reported in the United States according to the National Human Trafficking Hotline.
-                This is only a small percentage of the actual occurrences of trafficking as many cases go unreported. There are so many unreported cases because most of us wouldn’t recognize trafficking if we saw it. This map (courtesy of Polaris Project) shows where these phone calls originated from. Visit National Human Trafficking Hotline website to get statistics specific to your state:`,
+                p: `Like any crime, human trafficking can occur in any community where there are teens to manipulate and an illegal black market place to service. In 2016 there were over 7,500 cases of human trafficking reported in the United States according to the National Human Trafficking Hotline.\n\nThis is only a small percentage of the actual occurrences of trafficking as many cases go unreported. There are so many unreported cases because most of us wouldn’t recognize trafficking if we saw it. This map (courtesy of Polaris Project) shows where these phone calls originated from. Visit National Human Trafficking Hotline website to get statistics specific to your state:`,
             },
         ],
     },
