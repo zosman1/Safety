@@ -9,7 +9,7 @@ export class HeaderButton extends Component {
                 <Image
                     style={{ width: 150, height: 150 }}
                     source={{
-                        uri: 'https://picsum.photos/g/200/300',
+                        uri: 'https://picsum.photos/200/300/?gravity=east',
                     }}
                 />
             </TouchableOpacity>
